@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>自己紹介</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <div id="login-area">
+    <h2>パスワードを入力してください</h2>
+    <input type="password" id="password-input" placeholder="パスワード">
+    <button id="login-button">ログイン</button>
+    <p id="login-message"></p>
+  </div>
+
+  <div id="intro-page" style="display:none;">
+    <h1>自己紹介</h1>
+    <p class="subtitle">最近ちいかわみました!!</p>
+
+    <!-- 横並びレイアウト -->
+    <div class="layout">
+      <div class="image-area">
+        <img src="ちいかわ.jpg" alt="プロフィール画像">
+      </div>
+      <div class="table-area">
+        <table>
+          <tr><th>名前</th><td>浩美</td></tr>
+          <tr><th>趣味</th><td><ul id="hobby-list"><li>イラスト/漫画</li><li>TRPG</li><li>ゲーム</li></ul></td></tr>
+          <tr><th>好きな作品</th><td><ul id="works-list"><li>ゲゲゲの謎</li><li>呪術廻戦</li><li>名探偵コナン</li><li>モンスターハンター</li><li>FGO</li></ul></td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- ToDoリスト -->
+    <div class="todo-area">
+      <h2>来年の目標</h2>
+      <ul id="todo-list">
+        <li>ゲーム作り</li>
+        <li>2DLiveモデリング</li>
+        <li>Illustrator取得</li>
+      </ul>
+    </div>
+
+    <!-- ボタン群 -->
+    <div class="edit-button">
+      <button onclick="openEditWindow()">編集ウィンドウを開く</button>
+      <button onclick="highlightAdded()">追加項目を赤く</button>
+      <button onclick="resetHighlight()">元の色に戻す</button>
+      <button onclick="toggleTodo()">目標の表示/非表示</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
