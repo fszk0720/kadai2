@@ -1,0 +1,82 @@
+body {
+  font-family: "メイリオ", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #303030;
+}
+
+h1, h2 {
+  font-weight: normal;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+.image-area img {
+  width: 250px;
+  height: auto;
+  border: 2px solid #333;
+  flex-shrink: 0;
+}
+
+.table-area {
+  flex: 1;
+}
+
+.table-area table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #333;
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background-color: #f0f0f0;
+  width: 120px;
+}
+
+.todo-area {
+  margin: 30px auto;
+  text-align: center;
+}
+
+.todo-area ul {
+  list-style-type: disc;
+  margin: 0 auto;
+  padding: 0;
+  width: 300px;
+  text-align: left;
+}
+
+.edit-button {
+  text-align: center;
+  margin: 20px;
+}
+
+#login-area {
+  text-align: center;
+  margin: 50px;
+}
+
+/* 追加項目に付与するクラス */
+.added {
+  color: inherit; /* 初期は通常色 */
+}
