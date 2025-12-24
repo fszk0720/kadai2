@@ -10,7 +10,7 @@ function checkPassword() {
   const introPage = document.getElementById("intro-page");
   const loginArea = document.getElementById("login-area");
 
-  const correctPassword = "123";
+  const correctPassword = "1234567";
 
   if (input === correctPassword) {
     introPage.style.display = "block";
